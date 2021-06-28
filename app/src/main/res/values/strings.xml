@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">APP SISC</string>
+    <string name="entra">Entrar</string>
+    <string name="text_cadastro">Crie uma conta clicando aqui</string>
+    <string name="tilte_cadastro">Cadastre - se </string>
+    <string name="tilte_Confirmar"> Confirmar </string>
+    <string name="tilte_endereço"> Endereço </string>
+    <string name="tilte_Telefone"> Telefone </string>
+</resources>
