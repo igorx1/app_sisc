@@ -11,7 +11,7 @@
         android:theme="@style/Theme.APPSISC">
         <activity android:name=".TelaPrincipal" />
         <activity android:name=".FormCadastro" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".tela_adminsitrado" />
         <activity android:name=".FormiLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

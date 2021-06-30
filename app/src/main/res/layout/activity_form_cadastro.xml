@@ -37,7 +37,6 @@
 
     <EditText
         android:id="@+id/Email"
-
         android:layout_width="312dp"
         android:layout_height="56dp"
         android:layout_marginTop="10dp"
@@ -90,6 +89,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cadastra"
         style="@style/button"
         android:layout_width="257dp"
         android:layout_height="71dp"
