@@ -16,17 +16,16 @@
     tools:ignore="ExtraText">
 
 
-    <ImageView
-
-        android:id="@+id/logo"
-        android:layout_width="234dp"
-        android:layout_height="163dp"
-        android:src="@drawable/jpo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        />
+    <TextView
+        android:layout_width="133dp"
+        android:layout_height="47dp"
+        android:fontFamily="cursive"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="80px"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="49dp" />
 
     <EditText
         android:id="@+id/edit_email"
@@ -39,7 +38,7 @@
         android:inputType="textEmailAddress"
         android:saveEnabled="@style/edit_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo"
         tools:ignore="MissingConstraints" />
@@ -49,56 +48,68 @@
 
         android:layout_width="312dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:drawableRight="@drawable/ic_eye"
         android:hint="senha"
         android:inputType="numberPassword"
         android:saveEnabled="@style/edit_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_email"
         tools:ignore="MissingConstraints" />
 
+    <ImageView
+
+        android:id="@+id/logo"
+        android:layout_width="309dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="116dp"
+        android:src="@drawable/jpo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_tela_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="@string/text_cadastro"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_entrar" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_entrar" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_entrar"
         style="@style/button"
-        android:layout_width="279dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="23dp"
+        android:layout_width="284dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="20dp"
         android:text="@string/entra"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_senha" />
-
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:visibility="invisible"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bt_entrar" />
-
-    <TextView
-        android:id="@+id/text_tela_cadastro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:text="@string/text_cadastro"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bt_entrar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

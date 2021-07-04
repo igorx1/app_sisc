@@ -38,6 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/container_user" />
 
+
     <TextView
         android:id="@+id/nome_usuario"
         android:layout_width="wrap_content"
@@ -53,53 +54,54 @@
         app:layout_constraintStart_toEndOf="@id/icon_user"
         app:layout_constraintTop_toBottomOf="@id/container_user" />
 
-
     <ImageView
         android:id="@+id/email_image"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/ic_email"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_usuario"
 
-        />
+        app:layout_constraintTop_toBottomOf="@+id/icon_user" />
 
     <ImageView
         android:id="@+id/icon_endereço"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/ic_casa"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_image"
 
-        />
+        app:layout_constraintTop_toBottomOf="@+id/email_image" />
 
 
     <TextView
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="144dp"
-        android:layout_marginRight="144dp"
+        android:layout_marginTop="36dp"
         android:text="confirma endereço "
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="352dp" />
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toEndOf="@+id/icon_endereço"
+        app:layout_constraintTop_toBottomOf="@+id/email_usuario"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
 
+        android:id="@+id/email_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:text="confirma E-mail"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -107,36 +109,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@id/email_image"
-        app:layout_constraintTop_toBottomOf="@id/icon_user" />
-
+        app:layout_constraintTop_toBottomOf="@+id/nome_usuario" />
 
     <ImageView
         android:id="@+id/icon_telefone"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/ic_telefone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/icon_endereço" />
 
-
     <TextView
 
+        android:id="@+id/textView"
         android:layout_width="204dp"
         android:layout_height="29dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="200dp"
-        android:layout_marginRight="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="328dp"
         android:text="nunero para contato "
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/icon_telefone"
-        app:layout_constraintTop_toBottomOf="@+id/icon_endereço" />
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toEndOf="@+id/icon_telefone" />
 
     <Button
         android:layout_width="332dp"
@@ -150,7 +151,11 @@
         android:textStyle="bold"
 
 
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="526dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.866" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
