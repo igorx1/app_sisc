@@ -7,5 +7,6 @@
     <string name="tilte_endereço"> Endereço </string>
     <string name="tilte_Telefone"> Telefone </string>
     <string name="tilte_administrador"> administrados </string>
+    <string name="deslogar">Deslogar</string>
 
 </resources>

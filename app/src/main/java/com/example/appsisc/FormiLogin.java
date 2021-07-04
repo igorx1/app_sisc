@@ -28,8 +28,10 @@ public class FormiLogin extends AppCompatActivity {
     List<AuthUI.IdpConfig> authProviders;
     private AppSisc applicationInstance;
 
+    // essa nova propriedade, signInLauncher representa uma ação/atividade de acesso.
     private final ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(
             new FirebaseAuthUIActivityResultContract(),
+            // Abaixo é uma Classe Anônima
             new ActivityResultCallback<FirebaseAuthUIAuthenticationResult>() {
 
 
@@ -68,6 +70,8 @@ public class FormiLogin extends AppCompatActivity {
         this.authProviders = Arrays.asList(
                 new AuthUI.IdpConfig.EmailBuilder().build()
         );
+
+        // A tela de login/cadastro está sendo construida e armazenada nesta propriedade.
         this.signIn = AuthUI.getInstance()
                 .createSignInIntentBuilder()
                 .setAvailableProviders(this.authProviders)

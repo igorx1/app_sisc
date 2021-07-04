@@ -29,13 +29,13 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bt_deslogar"
         android:layout_width="332dp"
         android:layout_height="75dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="44dp"
         android:background="@color/black"
         android:padding="20dp"
-        android:text="Deslogar"
+        android:text="@string/deslogar"
         android:textAllCaps="false"
         android:textColor="@color/white"
 
@@ -48,9 +48,9 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TableLayout
-        android:layout_width="304dp"
-        android:layout_height="204dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:layout_width="369dp"
+        android:layout_height="211dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_deslogar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +69,7 @@
 
             <TextView
                 android:id="@+id/nome_usuario"
-                android:layout_width="wrap_content"
+                android:layout_width="318dp"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
                 android:text="Usuário"
@@ -115,7 +115,7 @@
                 />
 
             <TextView
-
+                android:id="@+id/endereço_usuario"
                 android:layout_width="252dp"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
@@ -137,7 +137,7 @@
 
             <TextView
 
-                android:id="@+id/textView"
+                android:id="@+id/celular_usuario"
                 android:layout_width="260dp"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
