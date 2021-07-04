@@ -27,137 +27,125 @@
         app:layout_constraintStart_toStartOf="@+id/container_user"
         app:layout_constraintTop_toTopOf="@+id/container_user" />
 
-    <ImageView
-        android:id="@+id/icon_user"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/ic_user"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/container_user" />
-
-
-    <TextView
-        android:id="@+id/nome_usuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:text="Confirma usuario "
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/icon_user"
-        app:layout_constraintTop_toBottomOf="@id/container_user" />
-
-    <ImageView
-        android:id="@+id/email_image"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/ic_email"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/icon_user" />
-
-    <ImageView
-        android:id="@+id/icon_endereço"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/ic_casa"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/email_image" />
-
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="confirma endereço "
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
-        app:layout_constraintStart_toEndOf="@+id/icon_endereço"
-        app:layout_constraintTop_toBottomOf="@+id/email_usuario"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-
-        android:id="@+id/email_usuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="28dp"
-        android:text="confirma E-mail"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@id/email_image"
-        app:layout_constraintTop_toBottomOf="@+id/nome_usuario" />
-
-    <ImageView
-        android:id="@+id/icon_telefone"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:src="@drawable/ic_telefone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/icon_endereço" />
-
-    <TextView
-
-        android:id="@+id/textView"
-        android:layout_width="204dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="328dp"
-        android:text="nunero para contato "
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.009"
-        app:layout_constraintStart_toEndOf="@+id/icon_telefone"
-        app:layout_constraintTop_toBottomOf="@+id/icon_endereço"
-        app:layout_constraintVertical_bias="1.0" />
 
     <Button
+        android:id="@+id/button2"
         android:layout_width="332dp"
         android:layout_height="75dp"
+        android:layout_marginBottom="68dp"
         android:background="@color/black"
         android:padding="20dp"
         android:text="Deslogar"
         android:textAllCaps="false"
         android:textColor="@color/white"
+
+
         android:textSize="18sp"
         android:textStyle="bold"
-
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:layout_width="304dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.866" />
+        app:layout_constraintTop_toBottomOf="@+id/container_user"
+        app:layout_constraintVertical_bias="0.116">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_user"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:id="@+id/nome_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Usuário"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/email_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_email"
+
+                />
+
+            <TextView
+
+                android:id="@+id/email_usuario"
+                android:layout_width="256dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="E-Mail"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_endereço"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_casa"
+
+                />
+
+            <TextView
+
+                android:layout_width="252dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Endereço"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+
+            <ImageView
+                android:id="@+id/icon_telefone"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_telefone" />
+
+            <TextView
+
+                android:id="@+id/textView"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Contato"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
