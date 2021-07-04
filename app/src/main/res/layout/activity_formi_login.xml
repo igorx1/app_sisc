@@ -19,20 +19,23 @@
     <TextView
         android:layout_width="133dp"
         android:layout_height="47dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="cursive"
         android:text="@string/app_name"
         android:textColor="@color/white"
-        android:textSize="80px"
+        android:textSize="25dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="49dp" />
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edit_email"
 
         android:layout_width="312dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:drawableRight="@drawable/ic_email"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -98,8 +101,8 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_entrar"
         style="@style/button"
-        android:layout_width="284dp"
-        android:layout_height="74dp"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
         android:layout_marginTop="20dp"
         android:text="@string/entra"
         android:textAllCaps="false"
